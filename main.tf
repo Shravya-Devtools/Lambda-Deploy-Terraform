@@ -17,7 +17,7 @@ resource "aws_iam_role_policy_attachment" "lambda_policy_attach" {
 # Lambda Function
 resource "aws_lambda_function" "lambda" {
   function_name = var.lambda_function_name
-  s3_bucket     = var.lambda_s3_bucket
+  s3_bucket     = "mybucket1234567-kiran"
   s3_key        = var.lambda_s3_key
   handler       = "index.handler"
   runtime       = "python3.11"
